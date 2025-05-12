@@ -38,8 +38,10 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
+import UserDashboard from './pages/UserDashboard';
 import AdminRegister from './pages/AdminRegister';
+import AdminDashboard from './pages/AdminDashboard';
+
 
 function App() {
   return (
@@ -48,8 +50,9 @@ function App() {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={< Dashboard/>} />
-        <Route path="/adminRegister" element={< AdminRegister/>} />
+        <Route path="/userdashboard" element={< UserDashboard/>} />
+        <Route path="/admindashboard" element={< AdminDashboard/>} />
+        <Route path="/adminlogin" element={< AdminRegister/>} />
       </Routes>
     </Router>
   );
