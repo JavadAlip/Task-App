@@ -90,6 +90,17 @@ const ManageTask = () => {
                             </button>
                         </div>
 
+                        {/* Attachment Section */}
+                        <div>
+                            <label className="block mb-1 font-medium">Attachment (PDF)</label>
+                            <input
+                                type="file"
+                                accept=".pdf"
+                                className="w-full border px-4 py-2 rounded-md"
+                            />
+                            <small className="text-gray-500 mt-1 block">Only PDF files are allowed</small>
+                        </div>
+
                         <button
                             type="submit"
                             className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"

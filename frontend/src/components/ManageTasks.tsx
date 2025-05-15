@@ -41,10 +41,12 @@ const ManageTask = () => {
                     <button title="Manage Tasks">
                         <Link to="/manage-tasks">Manage Tasks</Link>
                     </button>
-                    <button title="Messages">
+                    <button title="Create Task">
                         <Link to="/create-tasks">Create Tasks</Link>
-                        </button>
-                    <button title="Contacts">Users</button>
+                    </button>
+                    <button title="Users">
+                    <Link to="/all-users">Users</Link>
+                    </button>
                     <button title="Settings">Logout</button>
                 </nav>
             </aside>
